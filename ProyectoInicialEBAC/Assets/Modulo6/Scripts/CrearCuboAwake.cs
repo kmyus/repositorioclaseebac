@@ -9,8 +9,6 @@ public class CrearCuboAwake : MonoBehaviour
     {
         GameObject tempGameObject = Instantiate<GameObject>(PrefabCubeFromEmpty);
         tempGameObject.name = "CuboFromEmptyPrefabAwake";
-        Color c = new Color(Random.value, Random.value, Random.value);
-        tempGameObject.GetComponent<MeshRenderer>().material.color = c;
         tempGameObject.transform.position = Random.insideUnitSphere;
     }
 

@@ -19,8 +19,6 @@ public class CrearCubosUpdate : MonoBehaviour
         numCubos++;
         GameObject tempGameObject = Instantiate<GameObject>(PrefabCubeFromEmpty);
         tempGameObject.name = "CuboNumero" + numCubos;
-        Color c = new Color(Random.value, Random.value, Random.value);
-        tempGameObject.GetComponent<MeshRenderer>().material.color = c;
         tempGameObject.transform.position = Random.insideUnitSphere;
     }
 }
