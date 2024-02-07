@@ -7,9 +7,8 @@ public class CambiarColorAwake : MonoBehaviour
     public static GameObject objeto;
     public void Awake()
     {
-        objeto = this.gameObject;
         Color c = new Color(Random.value, Random.value, Random.value);
-        objeto.GetComponent<MeshRenderer>().material.color = c;
+        GetComponent<MeshRenderer>().material.color = c;
     }
 
     // Start is called before the first frame update

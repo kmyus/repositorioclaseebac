@@ -24,9 +24,6 @@ public class CrearCuboOnDisableOnEnable : MonoBehaviour
         numCubos++;
         GameObject tempGameObject = Instantiate<GameObject>(PrefabCubeFromEmpty);
         tempGameObject.name = "CuboNumber" + numCubos;
-        Color c = new Color(Random.value, Random.value, Random.value);
-        tempGameObject.GetComponent<MeshRenderer>().material.color = c;
-        tempGameObject.transform.position = Random.insideUnitSphere;
     }
 
     public void OnEnable()
@@ -34,8 +31,5 @@ public class CrearCuboOnDisableOnEnable : MonoBehaviour
         numCubos++;
         GameObject tempGameObject = Instantiate<GameObject>(PrefabCubeFromEmpty);
         tempGameObject.name = "CuboNumber" + numCubos;
-        Color c = new Color(Random.value, Random.value, Random.value);
-        tempGameObject.GetComponent<MeshRenderer>().material.color = c;
-        tempGameObject.transform.position = Random.insideUnitSphere;
     }
 }
