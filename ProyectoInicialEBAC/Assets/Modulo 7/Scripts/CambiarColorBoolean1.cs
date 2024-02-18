@@ -25,8 +25,8 @@ public class CambiarColorBoolean1 : MonoBehaviour
     }
     public void FixedUpdate()
     {
-        cambiarColor();
         variable = !variable;
+        cambiarColor();
     }
 
     private void cambiarColor()
